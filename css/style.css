@@ -98,7 +98,7 @@ nav {
 
 
 
-/* Presentation div */
+/* Presentation divs */
 #presentation {
     height: 100vh;
     background: #6089b4;
@@ -109,6 +109,66 @@ nav {
 }
 
 #presentation .fas {
+    color: #ffc107;
+    position: absolute;
+    right: 49vw;
+    margin-top: -75px;
+}
+#presentation2 {
+    height: 100vh;
+    background: #6089b4;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+    padding-top: 15vh;
+}
+
+#presentation2 .fas {
+    color: #ffc107;
+    position: absolute;
+    right: 49vw;
+    margin-top: -75px;
+}
+#presentation3 {
+    height: 100vh;
+    background: #6089b4;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+    padding-top: 15vh;
+}
+
+#presentation3 .fas {
+    color: #ffc107;
+    position: absolute;
+    right: 49vw;
+    margin-top: -75px;
+}
+#presentation4 {
+    height: 100vh;
+    background: #6089b4;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+    padding-top: 15vh;
+}
+
+#presentation4 .fas {
+    color: #ffc107;
+    position: absolute;
+    right: 49vw;
+    margin-top: -75px;
+}
+#presentation5 {
+    height: 100vh;
+    background: #6089b4;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+    padding-top: 15vh;
+}
+
+#presentation5 .fas {
     color: #ffc107;
     position: absolute;
     right: 49vw;
@@ -139,6 +199,11 @@ nav {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
+#presentationHeaderMainText2 {
+    padding-top: 37px;
+}
+
+
 #presentationHeaderSeperator {
     border-top: none !important;
 }
@@ -328,7 +393,7 @@ footer {
     grid-template-columns: repeat(3,1fr);
     height: 225px;
 }
-#presentationCarouselImgHolder3 {
+.presentationCarouselImgHolder3 {
    
 }
 
@@ -404,6 +469,25 @@ footer {
     overflow: hidden;
 }
 
+@media screen and (max-width: 1310px) {
+    .mediumScreenText {
+        font-size: 25px;
+    }
+    .jumbotron div {
+        display: block;
+    }
+    #jumbotronContentHolder {
+        width: 455px;
+    }
+    #landingLogoImageHolder {
+    width: 455px;
+    margin-top: 10px;
+    /* text-align: center; */
+    background-position-x: center;
+    }
+}
+
+
 
 /* PHONE STYLE */
 @media screen and (max-width: 768px) {
@@ -441,7 +525,7 @@ footer {
         padding-left: 0;
      }
      #presentation {
-        height: 165vh;
+        height: 141vh;
         width: 100%;
         padding: 10vh 0;
         overflow: hidden;
@@ -498,6 +582,15 @@ footer {
         padding: 0;
         text-align: center; 
     }
+    #presentationHeaderMainText2 {
+        padding: 0;
+        text-align: center;  
+       
+    padding-top: 40px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+       
+    }
     .openbtn {
         right: 20px;
     }
@@ -522,7 +615,7 @@ footer {
         margin-bottom: 40px;
     }
     .presentation5 {
-        height:183vh !important;
+        height: 210vh !importan
     }
     /* necessary mobile tweak */
     .justify-content-end {
@@ -540,13 +633,13 @@ footer {
         margin-bottom: 40px;
     }
     .presentation4 {
-        height:183vh !important;
+        height: 212vh !important;
     }
     .presentation3 {
-        height: 100vh !important;
+        height: 113vh !important;
     }
     .presentation2 {
-        height: 138vh !important;
+        height: 146vh !important;
     }
     .inlineFLex {
         display: inline-flex !important;
