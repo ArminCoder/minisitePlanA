@@ -1,21 +1,37 @@
 nav {
     background: rgba(255,255,255, 0.9) !important;
     z-index: 1;
+    position: fixed !important; 
+    top: 0 !important; 
+    left: 0 !important;
+     width: 100vw !important;
 }
 
 .navbar-nav {
     margin-left: 0 !important;
     width: 100%;
     justify-content: center; 
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-top: 7px;
+    padding-top: 0;
+    height: 33px;
+    border-right: 3px solid #004085 !important;
+
 }
 
 
 /* Landing div */
+#smallScreenJumbotron {
+    display: none;
+}
 #landing {
-    height: 80vh;
+    height: 100vh;
     background: lightgray;
     width: 100%;
-    background: url('../img/office.jpeg') center center;
+    background: url('../img/office.jpeg') fixed;
     margin-top: -60px;
     padding-top: 15vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
@@ -49,6 +65,10 @@ nav {
 }
 .jumbotron h2 {
     color :#6089b4!important;
+    
+}
+.jumbotron h2.text-uppercase {
+    font-size: 45px;
 }
 
 .landingSideBar {
@@ -65,19 +85,22 @@ nav {
     width: 80%;
     margin: auto;
 }
-.landingSideBar div span {
+.landingSideBar div a {
     height: 40px;
     font-size: 19px;
 }
-.landingSideBar div span.bg-primary {
+.landingSideBar div a.bg-primary {
     height: 50px;
+}
+#landingLogoImageHolder {
+    background-size: auto;  
 }
 
 
 
 /* Presentation div */
 #presentation {
-    height: 90vh;
+    height: 100vh;
     background: #6089b4;
     -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
     clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
@@ -96,6 +119,18 @@ nav {
     height: 100px;
     padding-right: 1vw;
     padding-left: 1vw;
+}
+#presentationChevronDown1 {
+    position: absolute;
+    right: 50vw;
+   
+    bottom: 10vh;
+}
+#presentationChevronDown {
+    font-size: 30px !important ; 
+}
+#presentationChevronDown:hover {
+    color: red !important ;
 }
 #presentationHeader .row {
     height: 100px;
@@ -226,7 +261,7 @@ footer {
     color: white;
     padding: 10px 15px;
     border: none;
-    bottom: 25vh;
+    bottom: 21vh;
   }
   
   .openbtn:hover {
@@ -257,32 +292,107 @@ footer {
     padding-top: 30px;
     padding-left: 35px;
   }
+
+.carousel-next-icon {
+    position: absolute;
+    right: 1vw;
+}
+.carousel-prev-icon {
+    position: absolute;
+    left: 1vw;
+}
+
   .carousel-next-icon:after
 {
   content: '>';
   font-size: 55px;
   color: orangered;
+  font-weight: 900;
 }
 
 .carousel-prev-icon:after {
   content: '<';
   font-size: 55px;
   color: orangered;
+  font-weight: 900;
 }
+#icon4a:after, #icon4b:after, #icon2a::after, #icon2b::after {
+   
+    color: black !important;  
+}
+
 
 /* CAROUSEL 3 STYLE */
 #gridDisplayCarousel3 {
     display: grid;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3,1fr);
+    height: 225px;
 }
 #presentationCarouselImgHolder3 {
-    position: absolute;
-    right: 0;
-    top: 0;
+   
 }
 
+/* CAROUSEL 4 */
+.presentation4 {
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF) !important;
+}
+.polygonImage  {
+    -webkit-clip-path: polygon(100% 0, 0 48%, 100% 100%);
+    clip-path: polygon(100% 0, 0 48%, 100% 100%);
+    background: url('../img/buildingImage3.jpg');
+    height: 320px;
+  }
+  .polygonImage2  {
+    
+    background: url('../img/buildingImage2.jpg');
+  
+  }
+  .polygonImage3  {
+  
+    background: url('../img/buildingImage1.jpg');
+  
+  }
+.justifyEvenly {
+    justify-content: space-evenly;
+}
 
+#presentationCarousel .polygonImage  {
+    width: 300px;
+}
 
+#presentationCarousel4 .carousel-inner {
+    margin-top: 75px;
+}
+
+#presentationCarousel4 .polygonImage  {
+    width: 300px;
+}
+
+/* CAROUSEL 5 */
+.polygonImage4  {
+     background: url('../img/peopleoffice1.jpg');
+   
+  }
+  .polygonImage5  {
+    
+    background: url('../img/peopleoffice3.jpg');
+  
+  }
+  .polygonImage6  {
+  
+    background: url('../img/peopleofficew.jpg');
+  
+  }
+
+  #presentationCarousel5 .carousel-inner {
+    margin-top: 75px;
+}
+
+#presentationCarousel5 .polygonImage  {
+    width: 300px;
+}
+
+/* CONTACT */
 #contact {
     height: 150px;
 }
@@ -295,6 +405,160 @@ footer {
 }
 
 
+/* PHONE STYLE */
+@media screen and (max-width: 768px) {
+    #navbarResponsive {
+        text-align: center
+    } 
+    .navbar-light .navbar-nav .nav-link {
+        border-right: none !important;
+              }; 
+   
+
+.jumbotron {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin-top: 30vh;
+    background: rgba(0,0,0,0.2);
+}
+
+  .jumbotron div div:nth-child(1) {
+      border: none !important;
+      
+  }    
+  #jumbotronContentHolder {
+      border: none;
+      width: 100%;
+  }
+     #smallScreenJumbotron {
+         display: block;
+     }
+     #landingLogoImageHolder {
+         display: none;
+     }
+     #landing {
+        padding-left: 0;
+     }
+     #presentation {
+        height: 165vh;
+        width: 100%;
+        padding: 10vh 0;
+        overflow: hidden;
+     }
+
+    #presentationChevronDown1 {
+        bottom: 14vh;
+        right: 44%;
+        font-size: 50px;
+           } 
+    #presentationCarousel , #presentationCarousel2, #presentationCarousel4 {
+        padding: 15vh 0;
+    }    
+     #presentationCarousel5 , #presentationCarousel3{
+         padding: 0;
+     }
+     #presentationCarousel2 {
+         padding-top: 5vh;
+     }
+    .carousel-inner {
+        padding: 0;
+    } 
+
+    .carousel-item {
+        width: 100%;
+    }
+    .hiddenOnMobile {
+        display: none;
+    }  
+    .mobileNoBorder {
+        border: none !important;
+    }
+    /* text align to center only on phones */
+    .text-right {
+        text-align: center !important;
+    }
+    .carousel-control-prev {
+        left: 2vw;  
+    }
+    .carousel-control-next {
+        right: 6vw;
+    }
+
+    .jumbotron {
+        background: rgba(0,0,0,0.4) !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        padding-top: 20vh !important;
+    }
+    .jumbotron h2 {
+        color: #fff !important;
+    }
+    #presentationHeaderMainText {
+        padding: 0;
+        text-align: center; 
+    }
+    .openbtn {
+        right: 20px;
+    }
+    footer {
+        display: grid;
+            }
+    #contact {
+        height: 320px;
+    }  
+    #contact ul {
+        display: block !important;
+    }   
+    .mobileText {
+        font-size: 18px;
+    }
+    .smallScreenDBlock {
+        display: block !important;
+    }
+    #presentationCarousel5 .polygonImage {
+        width: 210px;
+        height: 210px;
+        margin-bottom: 40px;
+    }
+    .presentation5 {
+        height:183vh !important;
+    }
+    /* necessary mobile tweak */
+    .justify-content-end {
+        justify-content: center !important;
+    }
+    #presentationCarousel4 {
+        width: 100%;
+        height: 210px;
+        margin-bottom: 40px; 
+        padding: 0;
+    }
+    #presentationCarousel4 .polygonImage {
+        width: 210px;
+        height: 210px;
+        margin-bottom: 40px;
+    }
+    .presentation4 {
+        height:183vh !important;
+    }
+    .presentation3 {
+        height: 100vh !important;
+    }
+    .presentation2 {
+        height: 138vh !important;
+    }
+    .inlineFLex {
+        display: inline-flex !important;
+    }
+    .margin0Mobile {
+        margin: 0 !important;
+    }
+
+
+
+}
+
 
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -302,3 +566,5 @@ footer {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+  
