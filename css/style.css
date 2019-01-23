@@ -1,0 +1,304 @@
+nav {
+    background: rgba(255,255,255, 0.9) !important;
+    z-index: 1;
+}
+
+.navbar-nav {
+    margin-left: 0 !important;
+    width: 100%;
+    justify-content: center; 
+}
+
+
+/* Landing div */
+#landing {
+    height: 80vh;
+    background: lightgray;
+    width: 100%;
+    background: url('../img/office.jpeg') center center;
+    margin-top: -60px;
+    padding-top: 15vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+}
+#landing .row {
+    height: 50vh;
+}
+.jumbotron  {
+    width: 40vw;
+    margin: auto;
+    background: none;
+     }
+.jumbotron div {
+    display: flex;
+    height: 190px;
+}    
+.jumbotron div div:nth-child(1) {
+    border: 2px solid black;
+    display: block;
+    margin-right: 10px;
+    padding: 20px 25px;
+    text-align: center;
+    width: 30vw;
+}
+.jumbotron div div:nth-child(2) {
+    background: black;
+    width: 20vw;
+    background: url(../img/landingLogo.png) no-repeat;
+    background-size: contain;
+}
+.jumbotron h2 {
+    color :#6089b4!important;
+}
+
+.landingSideBar {
+    position: absolute;
+    left: 0;
+    top: 35vh;
+    background: black;
+    width: 270px;
+    padding: 20px 0;
+    text-align: center; 
+}
+.landingSideBar div {
+    display: grid;
+    width: 80%;
+    margin: auto;
+}
+.landingSideBar div span {
+    height: 40px;
+    font-size: 19px;
+}
+.landingSideBar div span.bg-primary {
+    height: 50px;
+}
+
+
+
+/* Presentation div */
+#presentation {
+    height: 90vh;
+    background: #6089b4;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+    padding-top: 15vh;
+}
+
+#presentation .fas {
+    color: #ffc107;
+    position: absolute;
+    right: 49vw;
+    margin-top: -75px;
+}
+
+#presentationHeader {
+    height: 100px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+#presentationHeader .row {
+    height: 100px;
+}
+#presentationHeaderMainText {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+#presentationHeaderSeperator {
+    border-top: none !important;
+}
+#presentationHeaderLogo {
+   
+}
+#presentationHeaderLogo .grid {
+    display: grid;
+}
+#presentationHeaderLogo .grid span {
+    font-size: 36px;
+}
+#presentationHeaderLogo .grid span.text-white {
+    font-size: 36px;
+    margin-bottom: -13px;
+}
+#presentationHeaderLogo .grid span.text-dark {
+    font-size: 36px;
+    margin-bottom: -13px;
+}
+#presentationHeaderLogoHolder {
+    background: url(../img/whiteLogo.png) no-repeat;
+    width: 100px
+}
+#presentationHeader ul {
+    height: 100%;
+    padding-top: 35px;
+    text-align: center; 
+}
+
+
+
+
+
+
+
+/* content div */
+#content {
+    height: 100vh;
+    background: lightgray;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+}
+
+
+#realEstate {
+    height: 100vh;
+    background: lightblue;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+}
+
+#offices {
+    height: 100vh;
+    background: lightgray;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -23px;
+}
+
+#contact {
+    background: black;
+}
+
+footer {
+    background: #fff;
+}
+
+
+
+/* SIDE BAR */
+.sidebar {
+   
+    width: 0; /* 0 width - change this with JavaScript */
+    /* position: fixed; 
+    /* Stay in place */ 
+    z-index: 1; /* Stay on top */
+    top: 30vh;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    position: relative;
+    right: 35px;
+    
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    bottom: 25vh;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  #closeSideBarButton {
+      display: none;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+  /* Presentation (Second Screen) Carousel */
+  #presentationCarousel {
+    padding-top: 10vh;
+  }
+/* Presentation2 (Third Screen) Carousel */
+  #presentationCarousel2 {
+    padding-top: 10vh;
+  }
+  
+  
+  .presentationCarouselImg {
+    height: 40%;
+    padding-top: 30px;
+    padding-left: 35px;
+  }
+  .carousel-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: orangered;
+}
+
+.carousel-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: orangered;
+}
+
+/* CAROUSEL 3 STYLE */
+#gridDisplayCarousel3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+#presentationCarouselImgHolder3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+#contact {
+    height: 150px;
+}
+
+
+footer {
+    height: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
